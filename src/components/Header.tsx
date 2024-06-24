@@ -3,6 +3,7 @@ import styled from "styled-components";
 import NavMenu from "./NavMenu";
 
 const StyledHeader = styled.div`
+  width: 100%;
   height: 75px;
   display: flex;
   align-items: center;
@@ -10,8 +11,8 @@ const StyledHeader = styled.div`
   border-radius: 10px;
   border: 1px solid ${({ theme }) => theme.colors.element_stroke};
   background: ${({ theme }) => theme.colors.element_bg};
-  margin: ${({ theme }) => theme.spacing.XL};
   padding: ${({ theme }) => theme.spacing.XL};
+  margin-bottom: ${({ theme }) => theme.spacing.XL};
 `;
 
 const Header = () => {

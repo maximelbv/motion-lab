@@ -22,6 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
+  cursor: url("../assets/icons/cursor.svg"), auto !important;
 }
 
 h1,

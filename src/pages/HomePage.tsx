@@ -1,6 +1,12 @@
+import styled from "styled-components";
 import Gallery from "../components/Gallery";
 import { Tags } from "../constants/tags";
 import { IGalleryTileData } from "../types/Data";
+
+const StyledHomePage = styled.div`
+  width: 100%;
+  /* max-width: 1400px; */
+`;
 
 const HomePage = () => {
   const sampleData: IGalleryTileData[] = [
@@ -36,9 +42,9 @@ const HomePage = () => {
     },
   ];
   return (
-    <>
+    <StyledHomePage>
       <Gallery elements={sampleData} />
-    </>
+    </StyledHomePage>
   );
 };
 

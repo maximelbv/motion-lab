@@ -8,6 +8,7 @@ declare module "styled-components" {
       text: "#545662";
       subtext: "#7A7F93";
       element_bg: "#F4F5FB";
+      element_bg_darker: "#e1e3eb";
       element_stroke: "#E7E7E7";
       link: "#0273DD";
     };
@@ -21,6 +22,7 @@ declare module "styled-components" {
       XL: "20px";
     };
     fontSize: {
+      L: "24px";
       XXXL: "38px";
     };
   }
