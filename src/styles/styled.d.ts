@@ -17,6 +17,8 @@ declare module "styled-components" {
     };
     spacing: {
       M: "10px";
+      L: "16px";
+      XL: "20px";
     };
     fontSize: {
       XXXL: "38px";

@@ -14,6 +14,8 @@ export const theme: DefaultTheme = {
   },
   spacing: {
     M: "10px",
+    L: "16px",
+    XL: "20px",
   },
   fontSize: {
     XXXL: "38px",

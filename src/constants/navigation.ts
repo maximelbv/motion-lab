@@ -1,4 +1,4 @@
-import { INavigationObject } from "../types/navigation";
+import { INavigationObject } from "../types/Constants";
 
 export const navigation: INavigationObject[] = [
   {
