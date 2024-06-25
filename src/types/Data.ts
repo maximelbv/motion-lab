@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface ITag {
   name: string;
   icon: string;
@@ -8,8 +10,8 @@ export interface ITags {
   gsap: ITag;
 }
 
-export interface IGalleryTileData {
+export interface IProject {
   title: string;
   tags: ITag[];
-  preview: string | null;
+  component: ReactNode;
 }

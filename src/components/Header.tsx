@@ -1,6 +1,7 @@
 import { navigation } from "../constants/navigation";
 import styled from "styled-components";
 import NavMenu from "./NavMenu";
+import Logo from "./Logo";
 
 const StyledHeader = styled.div`
   width: 100%;
@@ -18,7 +19,7 @@ const StyledHeader = styled.div`
 const Header = () => {
   return (
     <StyledHeader>
-      <div>Logo</div>
+      <Logo />
       <NavMenu elements={navigation} />
     </StyledHeader>
   );

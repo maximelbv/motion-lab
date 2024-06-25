@@ -1,12 +1,12 @@
-import { IGalleryTileData } from "./Data";
+import { IProject } from "./Data";
 import { INavigationObject } from "./Constants";
 
 export interface IGalleryProps {
-  elements: IGalleryTileData[];
+  elements: IProject[];
 }
 
 export interface ITileProps {
-  data: IGalleryTileData;
+  data: IProject;
 }
 
 export interface INavMenuProps {

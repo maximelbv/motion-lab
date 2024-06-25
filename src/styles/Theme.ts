@@ -19,6 +19,9 @@ export const theme: DefaultTheme = {
     XL: "20px",
   },
   fontSize: {
+    S: "14px",
+    M: "18px",
+    ML: "20px",
     L: "24px",
     XXXL: "38px",
   },

@@ -17,7 +17,7 @@ const PreviewCtn = styled.div`
 const Tile = ({ data }: ITileProps) => {
   return (
     <StyledTile>
-      <PreviewCtn>{data.preview}</PreviewCtn>
+      <PreviewCtn>{data.component}</PreviewCtn>
     </StyledTile>
   );
 };
