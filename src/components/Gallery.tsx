@@ -6,7 +6,7 @@ import { Frame } from "../types/Data";
 export const StyledGallery = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  flex-wrap: wrap;
+  width: 100%;
   gap: ${({ theme }) => theme.spacing.M};
   @media (${device.lg}) {
     grid-template-columns: repeat(3, 1fr);

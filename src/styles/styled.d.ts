@@ -20,6 +20,7 @@ declare module "styled-components" {
       M: "10px";
       L: "16px";
       XL: "20px";
+      headerHeight: "95px";
     };
     fontSize: {
       S: "14px";

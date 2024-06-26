@@ -17,6 +17,7 @@ export const theme: DefaultTheme = {
     M: "10px",
     L: "16px",
     XL: "20px",
+    headerHeight: "95px",
   },
   fontSize: {
     S: "14px",

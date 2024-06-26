@@ -13,5 +13,7 @@ export interface Tags {
 export interface Frame {
   title: string;
   tags: Tag[];
-  component: ReactNode;
+  link: string;
+  preview: ReactNode;
+  frame: ReactNode;
 }

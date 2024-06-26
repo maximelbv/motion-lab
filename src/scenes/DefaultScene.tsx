@@ -2,7 +2,7 @@ import { useHelper } from "@react-three/drei";
 import { useControls } from "leva";
 import { useRef } from "react";
 import { DirectionalLightHelper, DirectionalLight } from "three";
-import { ReactNode } from "react"; // Ensure ReactNode is imported
+import { ReactNode } from "react";
 
 interface DefaultSceneProps {
   children: ReactNode;

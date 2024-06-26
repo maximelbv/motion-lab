@@ -6,7 +6,7 @@ interface ThreeCanvasLayoutProps {
 }
 
 const ThreeCanvasLayout: React.FC<ThreeCanvasLayoutProps> = ({ children }) => {
-  return <Canvas>{children}</Canvas>;
+  return <Canvas style={{ height: "100svh" }}>{children}</Canvas>;
 };
 
 export default ThreeCanvasLayout;

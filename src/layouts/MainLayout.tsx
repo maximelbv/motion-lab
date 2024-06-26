@@ -5,14 +5,17 @@ import CustomCursor from "../assets/icons/cursor.svg";
 
 const MainLayout = () => {
   const StyledMainLayoutCtn = styled.div`
-    min-height: 100svh;
-    min-width: 100svw;
+    height: 100svh;
+    width: 100svw;
     padding: ${({ theme }) => theme.spacing.XL};
-  `;
-  const StyledMainLayoutContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+  `;
+
+  const StyledOutletWrapper = styled.div`
+    margin-top: ${({ theme }) => theme.spacing.headerHeight};
+    width: 100%;
   `;
 
   return (
@@ -24,10 +27,10 @@ const MainLayout = () => {
       }}
     >
       <StyledMainLayoutCtn>
-        <StyledMainLayoutContent>
-          <Header />
+        <Header />
+        <StyledOutletWrapper>
           <Outlet />
-        </StyledMainLayoutContent>
+        </StyledOutletWrapper>
       </StyledMainLayoutCtn>
     </div>
   );

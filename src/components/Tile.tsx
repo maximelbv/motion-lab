@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import { Frame } from "../types/Data";
+import { Link } from "react-router-dom";
 
 const StyledTile = styled.div`
   display: grid;
   gap: ${({ theme }) => theme.spacing.M};
   border: 1px solid ${({ theme }) => theme.colors.element_stroke};
   border-radius: 10px;
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const PreviewCtn = styled.div`
@@ -33,9 +38,11 @@ export interface TileProps {
 const Tile = ({ data }: TileProps) => {
   return (
     <StyledTile>
-      <PreviewCtn>
-        <ContentWrapper>{data.component}</ContentWrapper>
-      </PreviewCtn>
+      <Link to={`/frames${data.link}`}>
+        <PreviewCtn>
+          <ContentWrapper>{data.preview}</ContentWrapper>
+        </PreviewCtn>
+      </Link>
     </StyledTile>
   );
 };

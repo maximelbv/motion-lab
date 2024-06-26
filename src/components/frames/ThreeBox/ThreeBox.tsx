@@ -1,8 +1,8 @@
 import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
 import { useFrame, ThreeEvent } from "@react-three/fiber";
 import { useState, useRef, RefObject } from "react";
-import DefaultScene from "../../scenes/DefaultScene";
 import * as THREE from "three";
+import DefaultScene from "../../../scenes/DefaultScene";
 
 const ThreeBox = () => {
   const sphereRef: RefObject<THREE.Mesh> = useRef(null);
@@ -26,7 +26,7 @@ const ThreeBox = () => {
 
   return (
     <DefaultScene>
-      <mesh
+      {/* <mesh
         ref={sphereRef}
         onPointerEnter={handleHover}
         onPointerLeave={handleQuitHover}
@@ -36,7 +36,7 @@ const ThreeBox = () => {
           color={isHovered ? "#4f81e4" : "#ba4fe4"}
           speed={3}
         />
-      </mesh>
+      </mesh> */}
       <OrbitControls />
     </DefaultScene>
   );

@@ -4,7 +4,8 @@ import NavMenu from "./NavMenu";
 import Logo from "./Logo";
 
 const StyledHeader = styled.div`
-  width: 100%;
+  position: absolute;
+  width: calc(100svw - 40px);
   height: 75px;
   display: flex;
   align-items: center;
@@ -13,7 +14,6 @@ const StyledHeader = styled.div`
   border: 1px solid ${({ theme }) => theme.colors.element_stroke};
   background: ${({ theme }) => theme.colors.element_bg};
   padding: ${({ theme }) => theme.spacing.XL};
-  margin-bottom: ${({ theme }) => theme.spacing.XL};
 `;
 
 const Header = () => {
