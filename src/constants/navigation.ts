@@ -1,6 +1,6 @@
-import { INavigationObject } from "../types/Constants";
+import { NavigationObject } from "../types/Constants";
 
-export const navigation: INavigationObject[] = [
+export const navigation: NavigationObject[] = [
   {
     name: "Home",
     route: "/",

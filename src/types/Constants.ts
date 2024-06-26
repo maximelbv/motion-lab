@@ -1,4 +1,4 @@
-export interface INavigationObject {
+export interface NavigationObject {
   name: string;
   route: string;
 }

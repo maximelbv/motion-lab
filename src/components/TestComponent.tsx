@@ -1,6 +1,15 @@
 const TestComponent = () => {
   return (
-    <div style={{ background: "red", width: "100%", height: "100%" }}>
+    <div
+      style={{
+        background: "red",
+        width: "800px",
+        height: "2000px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       TestComponent
     </div>
   );

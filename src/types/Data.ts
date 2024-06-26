@@ -1,17 +1,17 @@
 import { ReactNode } from "react";
 
-interface ITag {
+interface Tag {
   name: string;
   icon: string;
 }
 
-export interface ITags {
-  threejs: ITag;
-  gsap: ITag;
+export interface Tags {
+  threejs: Tag;
+  gsap: Tag;
 }
 
-export interface IProject {
+export interface Frame {
   title: string;
-  tags: ITag[];
+  tags: Tag[];
   component: ReactNode;
 }

@@ -1,7 +1,7 @@
 import Tile from "./Tile";
-import { IGalleryProps } from "../types/PropTypes";
 import styled from "styled-components";
 import { device } from "../styles/Breakpoints";
+import { Frame } from "../types/Data";
 
 export const StyledGallery = styled.div`
   display: grid;
@@ -19,7 +19,11 @@ export const StyledGallery = styled.div`
   }
 `;
 
-const Gallery = ({ elements }: IGalleryProps) => {
+export interface GalleryProps {
+  elements: Frame[];
+}
+
+const Gallery = ({ elements }: GalleryProps) => {
   return (
     <StyledGallery>
       {elements.map((elem) => (

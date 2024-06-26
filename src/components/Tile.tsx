@@ -1,23 +1,41 @@
 import styled from "styled-components";
-import { ITileProps } from "../types/PropTypes";
+import { Frame } from "../types/Data";
 
 const StyledTile = styled.div`
   display: grid;
   gap: ${({ theme }) => theme.spacing.M};
   border: 1px solid ${({ theme }) => theme.colors.element_stroke};
-  border-radius: 5px;
+  border-radius: 10px;
 `;
 
 const PreviewCtn = styled.div`
   aspect-ratio: 1 / 1;
-  border-radius: 5px;
+  border-radius: 10px;
   background: ${({ theme }) => theme.colors.element_bg};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 `;
 
-const Tile = ({ data }: ITileProps) => {
+const ContentWrapper = styled.div`
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export interface TileProps {
+  data: Frame;
+}
+
+const Tile = ({ data }: TileProps) => {
   return (
     <StyledTile>
-      <PreviewCtn>{data.component}</PreviewCtn>
+      <PreviewCtn>
+        <ContentWrapper>{data.component}</ContentWrapper>
+      </PreviewCtn>
     </StyledTile>
   );
 };

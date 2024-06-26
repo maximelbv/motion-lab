@@ -1,6 +1,6 @@
-import { ITags } from "../types/Data";
+import { Tags } from "../types/Data";
 
-export const tags: ITags = {
+export const tags: Tags = {
   threejs: {
     name: "R3F / Three.js",
     icon: "/",
