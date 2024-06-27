@@ -15,7 +15,6 @@ const StyledDropdown = styled.div`
   & .dropdownButton {
     background: ${({ theme }) => theme.colors.element_bg};
     background: ${({ theme }) => theme.colors.element_bg};
-    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     padding: ${({ theme }) => theme.spacing.L};
     border-radius: 50px;
     display: flex;
