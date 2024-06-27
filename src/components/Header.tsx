@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 import { navigation } from "../constants/navigation";
+import { device } from "../styles/Breakpoints";
 
 const StyledHeader = styled.div`
   width: 100%;
@@ -10,6 +11,9 @@ const StyledHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: ${({ theme }) => theme.spacing.XL};
+  @media (${device.sm}) {
+    padding: ${({ theme }) => theme.spacing.L};
+  }
 `;
 
 const Header = () => {

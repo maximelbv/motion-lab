@@ -8,7 +8,7 @@ export const theme: DefaultTheme = {
     element_bg_darker: "#e1e3eb",
     element_stroke: "#E7E7E7",
     link: "#0273DD",
-    buttonText: "#343434",
+    genericElementColor: "#564C44",
   },
   fonts: {
     Jakarta: "Jakarta",

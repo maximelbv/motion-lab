@@ -18,6 +18,7 @@ export const StyledGallery = styled.div`
   }
   @media (${device.sm}) {
     grid-template-columns: 1fr;
+    padding: ${({ theme }) => theme.spacing.L};
   }
 `;
 
