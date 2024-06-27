@@ -4,6 +4,7 @@ import DropdownIcon from "../assets/icons/DropdownIcon";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ExternalLinkArrow from "./ExternalLinkArrow";
+import Divider from "./Divider";
 
 interface NavMenuProps {
   elements: NavigationObject[];
@@ -13,10 +14,11 @@ const StyledDropdown = styled.div`
   position: relative;
   & .dropdownButton {
     background: ${({ theme }) => theme.colors.element_bg};
+    background: ${({ theme }) => theme.colors.element_bg};
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     padding: ${({ theme }) => theme.spacing.L};
     border-radius: 50px;
     display: flex;
-    border: 1px solid ${({ theme }) => theme.colors.element_stroke};
     & svg {
       & rect {
         fill: ${({ theme }) => theme.colors.genericElementColor};
@@ -38,11 +40,17 @@ const StyledDropdown = styled.div`
     & a {
       color: inherit;
       padding: 10px;
+      padding: 12px 10px;
       border-radius: 5px;
       &:hover {
         background: ${({ theme }) => theme.colors.element_bg_darker};
       }
     }
+  }
+  & .externalLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   & .hidden {
     display: none;
@@ -94,6 +102,16 @@ const NavMenu = ({ elements }: NavMenuProps) => {
             {menu.isExternal && <ExternalLinkArrow />}
           </Link>
         ))}
+        <Divider />
+        <Link
+          onClick={handleClick}
+          target="_blank"
+          to="https://www.x.com/maximelbv"
+          className="externalLink"
+        >
+          maximelbv
+          <ExternalLinkArrow />
+        </Link>
       </div>
     </StyledDropdown>
   );

@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 const StyledExternalLinkArrow = styled.div`
   & svg {
-    margin-bottom: 1px;
     & path {
-      fill: ${({ theme }) => theme.colors.buttonText};
+      fill: ${({ theme }) => theme.colors.text};
     }
   }
 `;
@@ -13,13 +12,16 @@ const ExternalLinkArrow = () => {
   return (
     <StyledExternalLinkArrow>
       <svg
-        width="13"
-        height="13"
-        viewBox="0 0 13 13"
+        width="11"
+        height="12"
+        viewBox="0 0 11 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M12.6631 1.83667C12.6631 1.28438 12.2154 0.836669 11.6631 0.836669H2.66309C2.1108 0.836669 1.66309 1.28438 1.66309 1.83667C1.66309 2.38895 2.1108 2.83667 2.66309 2.83667H10.6631V10.8367C10.6631 11.389 11.1108 11.8367 11.6631 11.8367C12.2154 11.8367 12.6631 11.389 12.6631 10.8367V1.83667ZM2.37019 12.5438L12.3702 2.54378L10.956 1.12956L0.955979 11.1296L2.37019 12.5438Z" />
+        <path
+          d="M11 1.5C11 0.947715 10.5523 0.5 10 0.5H1C0.447716 0.5 2.84554e-07 0.947715 2.84554e-07 1.5C2.84554e-07 2.05228 0.447716 2.5 1 2.5H9V10.5C9 11.0523 9.44772 11.5 10 11.5C10.5523 11.5 11 11.0523 11 10.5V1.5ZM1.70711 11.2071L10.7071 2.20711L9.29289 0.792893L0.292893 9.79289L1.70711 11.2071Z"
+          fill="#545662"
+        />
       </svg>
     </StyledExternalLinkArrow>
   );
