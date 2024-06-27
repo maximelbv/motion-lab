@@ -2,7 +2,8 @@ import { NavigationObject } from "../types/Constants";
 
 export const navigation: NavigationObject[] = [
   {
-    name: "Home",
-    route: "/",
+    name: "maximelbv",
+    route: "https://x.com/maximelbv",
+    isExternal: true,
   },
 ];

@@ -26,7 +26,7 @@ const ThreeBox = () => {
 
   return (
     <DefaultScene>
-      {/* <mesh
+      <mesh
         ref={sphereRef}
         onPointerEnter={handleHover}
         onPointerLeave={handleQuitHover}
@@ -36,7 +36,7 @@ const ThreeBox = () => {
           color={isHovered ? "#4f81e4" : "#ba4fe4"}
           speed={3}
         />
-      </mesh> */}
+      </mesh>
       <OrbitControls />
     </DefaultScene>
   );

@@ -2,22 +2,24 @@ import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
   colors: {
-    text: "#545662",
+    text: "#343434",
     subtext: "#7A7F93",
     element_bg: "#F4F5FB",
     element_bg_darker: "#e1e3eb",
     element_stroke: "#E7E7E7",
     link: "#0273DD",
+    buttonText: "#343434",
   },
   fonts: {
     Jakarta: "Jakarta",
     Quincy: "Quincy",
+    Dahila: "Dahila",
   },
   spacing: {
     M: "10px",
+    ML: "14px",
     L: "16px",
-    XL: "20px",
-    headerHeight: "95px",
+    XL: "30px",
   },
   fontSize: {
     S: "14px",

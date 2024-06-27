@@ -7,14 +7,12 @@ const MainLayout = () => {
   const StyledMainLayoutCtn = styled.div`
     height: 100svh;
     width: 100svw;
-    padding: ${({ theme }) => theme.spacing.XL};
     display: flex;
     flex-direction: column;
     align-items: center;
   `;
 
   const StyledOutletWrapper = styled.div`
-    margin-top: ${({ theme }) => theme.spacing.headerHeight};
     width: 100%;
   `;
 

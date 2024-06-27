@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "Dahila";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/dahila/dahlia-medium.otf");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Jakarta";
   font-style: normal;
   font-weight: 200;

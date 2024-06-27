@@ -7,6 +7,8 @@ export const StyledGallery = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
+  padding: ${({ theme }) => theme.spacing.XL};
+  padding-top: 0;
   gap: ${({ theme }) => theme.spacing.M};
   @media (${device.lg}) {
     grid-template-columns: repeat(3, 1fr);

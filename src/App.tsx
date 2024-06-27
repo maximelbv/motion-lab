@@ -11,12 +11,16 @@ import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import { frames } from "./constants/frames";
 import { mapFrameDataToRoute } from "./helpers/mappers/frameMappers";
+import AboutPage from "./pages/AboutPage";
 
 const frameRoutes = frames.map((frame) =>
   mapFrameDataToRoute({ frameData: frame })
 ) as RouteObject[];
 
-frameRoutes.push({ path: "/", element: <HomePage /> });
+frameRoutes.push(
+  { path: "/", element: <HomePage /> },
+  { path: "/about", element: <AboutPage /> }
+);
 
 const router = createBrowserRouter([
   {

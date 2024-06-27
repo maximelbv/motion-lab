@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const StyledTile = styled.div`
   display: grid;
   gap: ${({ theme }) => theme.spacing.M};
-  border: 1px solid ${({ theme }) => theme.colors.element_stroke};
   border-radius: 10px;
   & a {
     text-decoration: none;

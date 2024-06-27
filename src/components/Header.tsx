@@ -1,18 +1,14 @@
-import { navigation } from "../constants/navigation";
 import styled from "styled-components";
-import NavMenu from "./NavMenu";
 import Logo from "./Logo";
+import NavMenu from "./NavMenu";
+import { navigation } from "../constants/navigation";
 
 const StyledHeader = styled.div`
-  position: absolute;
-  width: calc(100svw - 40px);
-  height: 75px;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 10px;
-  border: 1px solid ${({ theme }) => theme.colors.element_stroke};
-  background: ${({ theme }) => theme.colors.element_bg};
   padding: ${({ theme }) => theme.spacing.XL};
 `;
 
