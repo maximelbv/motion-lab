@@ -11,23 +11,36 @@ import ErrorPage from "./pages/ErrorPage";
 import HomePage from "./pages/HomePage";
 import { frames } from "./constants/frames";
 import { mapFrameDataToRoute } from "./helpers/mappers/frameMappers";
+import MotionLabPage from "./pages/MotionLabPage";
 import AboutPage from "./pages/AboutPage";
+import MotionLabLayout from "./layouts/MotionLabLayout";
 
 const frameRoutes = frames.map((frame) =>
   mapFrameDataToRoute({ frameData: frame })
 ) as RouteObject[];
 
-frameRoutes.push(
-  { path: "/", element: <HomePage /> },
-  { path: "/about", element: <AboutPage /> }
-);
+frameRoutes.push({ path: "/lab", element: <MotionLabPage /> });
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     errorElement: <ErrorPage />,
-    children: frameRoutes,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/lab",
+        element: <MotionLabLayout />,
+        children: frameRoutes,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+    ],
   },
 ]);
 

@@ -37,7 +37,7 @@ export interface TileProps {
 const Tile = ({ data }: TileProps) => {
   return (
     <StyledTile>
-      <Link to={`/frames${data.link}`}>
+      <Link to={`/lab${data.link}`}>
         <PreviewCtn>
           <ContentWrapper>{data.preview}</ContentWrapper>
         </PreviewCtn>

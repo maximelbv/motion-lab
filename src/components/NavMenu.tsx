@@ -4,7 +4,6 @@ import DropdownIcon from "../assets/icons/DropdownIcon";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import ExternalLinkArrow from "./ExternalLinkArrow";
-import Divider from "./Divider";
 
 interface NavMenuProps {
   elements: NavigationObject[];
@@ -101,16 +100,6 @@ const NavMenu = ({ elements }: NavMenuProps) => {
             {menu.isExternal && <ExternalLinkArrow />}
           </Link>
         ))}
-        <Divider />
-        <Link
-          onClick={handleClick}
-          target="_blank"
-          to="https://www.x.com/maximelbv"
-          className="externalLink"
-        >
-          maximelbv
-          <ExternalLinkArrow />
-        </Link>
       </div>
     </StyledDropdown>
   );

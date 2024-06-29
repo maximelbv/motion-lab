@@ -2,8 +2,8 @@ import { NavigationObject } from "../types/Constants";
 
 export const navigation: NavigationObject[] = [
   {
-    name: "Gallery",
-    route: "/",
+    name: "Motion Lab",
+    route: "/lab",
     isExternal: false,
   },
   {

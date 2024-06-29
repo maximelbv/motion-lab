@@ -9,7 +9,7 @@ export const mapFrameDataToRoute = ({
 }: MapFrameDataToRouteProps) => {
   if (frameData) {
     return {
-      path: `/frames${frameData.link}`,
+      path: `/lab${frameData.link}`,
       element: frameData.frame,
     };
   } else {
